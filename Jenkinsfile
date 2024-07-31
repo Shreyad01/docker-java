@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('d784ec34-84a6-4363-8d99-5ac8be4a8df8')
-        REPO_NAME = 'chirag1212/my_repo'
+        DOCKERHUB_CREDENTIALS = credentials('727edad4-c383-4574-a868-9570224b1bc0')
+        REPO_NAME = 'shreyad01/docker-java-app'
     }
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/TankChirag-1212/my-java-app.git'
+                git 'https://github.com/Shreyad01/docker-java.git'
             }
         }
         stage('Build Docker Image') {
