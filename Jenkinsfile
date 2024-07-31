@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('727edad4-c383-4574-a868-9570224b1bc0')
+        DOCKERHUB_CREDENTIALS = credentials('0eb1e76a-abaa-4e80-b1c1-72101f9c9f77')
         REPO_NAME = 'shreyad01/docker-java-app'
     }
     stages {
