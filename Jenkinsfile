@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    dockerImage = docker.build("${env.REPO_NAME}")
+                    dockerImage = docker.build("${env.REPO_NAME}:latest")
                 }
             }
         }
