@@ -20,7 +20,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
-                    docker.withRegistry('DOCKERHUB_CREDENTIALS') {
+                    docker.withRegistry('', 'DOCKERHUB_CREDENTIALS') {
                         // dockerImage.push("${env.BUILD_NUMBER}")
                         dockerImage.push('latest')
                     }
